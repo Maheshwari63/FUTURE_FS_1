@@ -59,46 +59,10 @@ FUTURE_FS_1
 └── README.md
 ```
 
----
-
-## ▶️ How to Run the Project
-
-1. Clone the repository
-
-```
-git clone https://github.com/Maheshwari63/FUTURE_FS_1.git
-```
-
-2. Navigate to the project folder
-
-```
-cd FUTURE_FS_1
-```
-
-3. Install dependencies
-
-```
-npm install
-```
-
-4. Start the development server
-
-```
-npm start
-```
-
-The project will run on:
-
-```
-http://localhost:3000
-```
-
----
-
 ## 🌐 Live Demo
 
 Live Website:
-
+http://localhost:5173/
 
 ---
 
