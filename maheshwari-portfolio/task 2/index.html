@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini CRM Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN SCREEN -->
+<div id="loginPage" class="login-page">
+  <div class="login-card">
+    <h2>Mini CRM Login</h2>
+    <p>Welcome back, Admin</p>
+
+    <input type="email" id="loginEmail" placeholder="Email" />
+    <input type="password" id="loginPassword" placeholder="Password" />
+
+    <button id="loginBtn">Login</button>
+
+    <small>Demo Login: admin@crm.com / admin123</small>
+  </div>
+</div>
+
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>Mini CRM</h2>
+    <ul>
+      <li id="dashboardBtn" class="active">📊 Dashboard</li>
+      <li id="leadsBtn">👥 Leads</li>
+      <li id="logoutBtn">🚪 Logout</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- DASHBOARD SECTION -->
+    <div id="dashboardSection">
+
+      <h1>Mini CRM System</h1>
+
+      <!-- DASHBOARD CARDS -->
+      <div class="dashboard">
+        <div class="card total">
+          <h3>Total Leads</h3>
+          <p id="totalCount">0</p>
+        </div>
+
+        <div class="card rate">
+          <h3>Conversion Rate</h3>
+          <p id="conversionRate">0%</p>
+        </div>
+
+        <div class="card new">
+          <h3>New</h3>
+          <p id="newCount">0</p>
+        </div>
+
+        <div class="card contacted">
+          <h3>Contacted</h3>
+          <p id="contactedCount">0</p>
+        </div>
+
+        <div class="card converted">
+          <h3>Converted</h3>
+          <p id="convertedCount">0</p>
+        </div>
+      </div>
+      <!-- CONVERSION INSIGHTS -->
+<div class="insight-wrapper">
+
+  <!-- Conversion Ring -->
+  <div class="ring-card">
+    <div class="ring">
+      <svg width="120" height="120">
+        <circle class="bg" cx="60" cy="60" r="50"></circle>
+        <circle class="progress" cx="60" cy="60" r="50"></circle>
+      </svg>
+      <div class="ring-text">
+        <span id="ringPercent">0%</span>
+        <small>Converted</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Insight Box -->
+  <div class="insight-card">
+    <h3>📊 Insight</h3>
+    <p id="insightText">
+      No leads yet. Start adding leads to see insights.
+    </p>
+  </div>
+
+</div>
+<!-- RECENT ACTIVITY PANEL -->
+<div class="activity-card">
+  <h3>🕒 Recent Activity</h3>
+  <ul id="activityList">
+    <li class="empty">No recent activity yet.</li>
+  </ul>
+</div>
+
+
+<!-- FORM -->
+      <form id="customerForm">
+        <input type="text" id="name" placeholder="Customer Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <button type="submit">Add Customer</button>
+      </form>
+
+    </div>
+
+    <!-- LEADS SECTION -->
+    <div id="leadsSection" style="display: none;">
+      <h1>All Leads</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="customerList"></tbody>
+      </table>
+    </div>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
