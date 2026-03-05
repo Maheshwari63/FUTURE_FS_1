@@ -14,7 +14,7 @@ The goal of this project is to build an online presence where recruiters and pro
 ## 🔗 Project Repository
 
 GitHub Repository:
-https://github.com/Maheshwari63/FUTURE_FS_1
+https://github.com/Maheshwari63/FUTURE_FS_01
 
 ---
 
